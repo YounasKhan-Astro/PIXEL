@@ -192,7 +192,55 @@ def two_planet_transits_taskB():
     plt.show()
 
     print("Figure saved to assignment2_taskB.png")
+def three_planet_transits_taskC():
+    """
+    Assignment 2 – Task C:
+    Plot transits of three planets around the same star:
+      - Planet 1: Kepler-297 c (original)
+      - Planet 2: radius = 0.5 × Rp_c
+      - Planet 3: radius = 2.0 × Rp_c
 
+    The figure is saved as 'assignment2_taskC.png'.
+    """
+    # Base planet: Kepler-297 c
+    params_base = kepler_297c_params()
+
+    # Planet 2: half the radius
+    params_small = params_base.copy()
+    params_small["rp"] = params_base["rp"] * 0.5
+
+    # Planet 3: double the radius
+    params_big = params_base.copy()
+    params_big["rp"] = params_base["rp"] * 2.0
+
+    # Build models and compute light curves
+    model_base = TransitModel(params_base)
+    flux_base = model_base.compute_light_curve()
+
+    model_small = TransitModel(params_small)
+    flux_small = model_small.compute_light_curve()
+
+    model_big = TransitModel(params_big)
+    flux_big = model_big.compute_light_curve()
+
+    # Time grid (same for all)
+    t = model_base.t
+
+    # Plot all three with different colours and legend
+    plt.figure(figsize=(10, 6))
+    plt.plot(t, flux_base, label="Kepler-297 c (Rp)", linewidth=2)
+    plt.plot(t, flux_small, label="Planet 2 (0.5 × Rp)", linewidth=2)
+    plt.plot(t, flux_big, label="Planet 3 (2 × Rp)", linewidth=2)
+
+    plt.xlabel("Time from central transit (days)")
+    plt.ylabel("Relative flux")
+    plt.title("Transit light curves – Kepler-297 family (Task C)")
+    plt.legend()
+    plt.tight_layout()
+    plt.savefig("assignment2_taskC.png")
+    plt.show()
+
+    print("Figure saved to assignment2_taskC.png")
 
 
 if __name__ == "__main__":
