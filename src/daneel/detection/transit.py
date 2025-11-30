@@ -33,7 +33,7 @@ class TransitModel:
         self.params.w = params_dict.get("w", 90.0)        # arg of periastron [deg]
 
         # Limb darkening
-        self.params.u = params_dict.get("u", [0.3, 0.2])  # limb darkening coeffs
+        self.params.u = params_dict.get("u", [0.357, 0.225])  # limb darkening coeffs for Kepler 297 star
         self.params.limb_dark = params_dict.get(
             "limb_dark", "quadratic"
         )  # limb darkening law
@@ -73,7 +73,7 @@ class TransitModel:
         plt.plot(self.t, self.flux)
         plt.xlabel("Time from central transit (days)")
         plt.ylabel("Relative flux")
-        plt.title("Transit light curve")
+        plt.title("Transit light curve for Kepler-297 c")
         plt.tight_layout()
         plt.savefig(output_file)
         plt.show()
@@ -147,7 +147,7 @@ def transit(params_yaml=None, out_png=None):
     if params_yaml is None:
         # Default: use your Task F planet Kepler-297c
         params = kepler_297c_params()
-        output_file = out_png or "Kepler-297c_assignment1_taskF.png"
+        output_file = out_png or "assignment2_taskA.png"
         model = TransitModel(params)
         model.run(output_file=output_file)
     else:
@@ -162,4 +162,4 @@ if __name__ == "__main__":
 
     # Create model and run it, saving to the required filename
     model = TransitModel(params)
-    model.run(output_file="Kepler-297c_assignment1_taskF.png")
+    model.run(output_file="assignment2_taskA.png")
