@@ -1,0 +1,51 @@
+Random Forest – TESS transit detection (Assignment 2 – Task D)
+Four combinations of (n_estimators, max_depth)
+
+======================================================================
+Model_A: n_estimators=200, max_depth=10
+Optimal threshold: 0.3522
+
+Confusion matrix (rows=true, cols=pred)
+Format: [[TN FP]
+         [FN TP]]
+[[71 24]
+ [ 1 93]]
+
+Precision (Planet class, optimal threshold): 0.7949
+
+======================================================================
+Model_B: n_estimators=200, max_depth=None
+Optimal threshold: 0.3750
+
+Confusion matrix (rows=true, cols=pred)
+Format: [[TN FP]
+         [FN TP]]
+[[71 24]
+ [ 2 92]]
+
+Precision (Planet class, optimal threshold): 0.7931
+
+======================================================================
+Model_C: n_estimators=500, max_depth=10
+Optimal threshold: 0.3473
+
+Confusion matrix (rows=true, cols=pred)
+Format: [[TN FP]
+         [FN TP]]
+[[71 24]
+ [ 1 93]]
+
+Precision (Planet class, optimal threshold): 0.7949
+
+======================================================================
+Model_D: n_estimators=500, max_depth=None
+Optimal threshold: 0.3620
+
+Confusion matrix (rows=true, cols=pred)
+Format: [[TN FP]
+         [FN TP]]
+[[70 25]
+ [ 1 93]]
+
+Precision (Planet class, optimal threshold): 0.7881
+
