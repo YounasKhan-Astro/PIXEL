@@ -104,3 +104,24 @@ saves the output figure to lc.png
 Running the command will produce a PNG file containing the transit light curve:
 ```lc.png
 ```
+To run Random Forest detection:
+
+    daneel -i parameters.yaml -d rf
+## Random Forest detection (Assignment 2 – Task G)
+
+Daneel includes a Random Forest–based exoplanet detector implemented in
+`src/daneel/detection/rf_detector.py`. The configuration is read from the
+YAML parameter file in the `detection` section.
+
+Example `parameters.yaml` snippet:
+
+```yaml
+detection:
+  method: rf                 
+  kernel: default_rf         
+  csv_path: tess_data.csv    
+  n_bins: 1000
+  use_scaler: false
+  samples_per_class: 350
+  n_estimators: 500
+  max_depth: null

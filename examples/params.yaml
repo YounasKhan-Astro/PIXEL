@@ -10,3 +10,13 @@ transit:
   limb_dark: "quadratic" # limb darkening model
 classifier:
   type: cnn # [cnn, rf] for Convolutional Neural Network and Random Forest
+#assignmnet2 taskG
+detection:
+  method: rf                 # optional label, not used by code but informative
+  kernel: default_rf         # name of the RF configuration
+  csv_path: tess_data.csv    # <<< dataset path (required in the assignment)
+  n_bins: 1000
+  use_scaler: false
+  samples_per_class: 350
+  n_estimators: 500
+  max_depth: null
