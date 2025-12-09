@@ -125,3 +125,11 @@ detection:
   samples_per_class: 350
   n_estimators: 500
   max_depth: null
+  
+##Run CNN detection (Assignment 2 – Task H)
+
+To run the CNN-based exoplanet detector on the `tess_data.csv` dataset:
+
+```bash
+daneel -i examples/params.yaml -d cnn
+

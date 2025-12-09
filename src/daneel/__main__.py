@@ -1,6 +1,6 @@
 import datetime
 import argparse
-
+from .dream.gan_dream import GANDreamer  # for Assignment2 Task I
 from daneel.parameters import Parameters
 from daneel.detection.transit import transit as transit_cli
 
@@ -17,7 +17,6 @@ def main():
         required=True,
         help="Input parameter file",
     )
-
     # Transit mode
     parser.add_argument(
         "-t", "--transit",
@@ -41,9 +40,18 @@ def main():
         action="store_true",
         help="Atmospheric characterisation",
     )
+    #assignment2 Task I
+    parser.add_argument(
+    "--dream",
+    action="store_true",
+    help="Train a GAN to dream new exoplanetary transit light curves",
+)
 
     args = parser.parse_args()
-
+    #assignemnt 2 Task I
+    import yaml
+    with open(args.input_file, "r") as f:
+        params = yaml.safe_load(f)
     # Start log
     start = datetime.datetime.now()
     print(f"Daneel starts at {start}")
@@ -53,7 +61,11 @@ def main():
     # ===========================
     if args.transit:
         transit_cli(params_yaml=args.input_file)
-
+    # Assignent 2 Task I
+    if args.dream:
+        dreamer = GANDreamer(params)
+        dreamer.run()
+        return
     # ===========================
     # Random Forest mode
     # ===========================

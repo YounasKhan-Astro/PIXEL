@@ -32,3 +32,18 @@ detection:
   epochs: 20
   batch_size: 64
   learning_rate: 0.001
+#assignmnet2 Task I
+dream:
+  dataset_path: "/ca25/comp_astro_25/tess_data.csv"   # path to your lightcurve CSV
+  label_column: "label"                    # or remove if there is no label column
+
+  batch_size: 128
+  z_dim: 100
+  ngf: 32
+  ndf: 32
+  epochs: 100
+  learning_rate: 0.0002
+  beta1: 0.5
+
+  model_dir: "models/gan"
+  sample_output: "assignment2_taskI_dream.png"
