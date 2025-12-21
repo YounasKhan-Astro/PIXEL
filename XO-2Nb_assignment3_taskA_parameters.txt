@@ -1,0 +1,19 @@
+Planet: XO-2N b
+Model: TauREx Transmission Spectrum
+
+Planet parameters:
+  Radius: 0.97 Rj
+  Mass:   0.62 Mj
+
+Star parameters:
+  Temperature: 5290 K
+  Radius:      0.99 Rsun
+
+Atmosphere:
+  H2O: 5.92e-04
+  CH4: 4.63e-06
+  CO2: 1.49e-05
+  CO:  2.58e-06
+
+Error model:
+  Constant 10 ppm
