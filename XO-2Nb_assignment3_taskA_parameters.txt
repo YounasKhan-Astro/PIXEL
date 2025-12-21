@@ -10,10 +10,10 @@ Star parameters:
   Radius:      0.99 Rsun
 
 Atmosphere:
-  H2O: 5.92e-04
-  CH4: 4.63e-06
-  CO2: 1.49e-05
-  CO:  2.58e-06
+  H2O: 1.20e-02
+  CH4: 1.20e-04
+  CO2: 1.20e-06
+  CO:  1.20e-08
 
 Error model:
   Constant 10 ppm
