@@ -1,0 +1,16 @@
+CENTRALWAVELNG,BANDWIDTH,PL_TRANDEP,PL_TRANDEPERR1,PL_TRANDEPERR2,PL_TRANDEP_AUTHORS,PL_RATROR,PL_RATRORERR1,PL_RATRORERR2,PL_RATROR_AUTHORS,PL_RADJ,PL_RADJERR1,PL_RADJERR2,PL_RADJ_AUTHORS,PL_TRANMID,PL_TRANMIDERR1,PL_TRANMIDERR2,ST_RAD,ST_RADERR1,ST_RADERR2,ST_RAD_AUTHORS
+1.205,,0.978,0.046,-0.046,Crouzet et al. 2012,0.09889,0.0023,-0.00235,Calculated,0.9527,0.024,-0.024,Calculated,,,,0.99,0.009,-0.009,Crouzet et al. 2012
+1.245,,1.032,0.04,-0.04,Crouzet et al. 2012,0.10159,0.00195,-0.00199,Calculated,0.9787,0.0209,-0.0209,Calculated,,,,0.99,0.009,-0.009,Crouzet et al. 2012
+1.285,,1.078,0.042,-0.042,Crouzet et al. 2012,0.10383,0.002,-0.00204,Calculated,1.0003,0.0215,-0.0215,Calculated,,,,0.99,0.009,-0.009,Crouzet et al. 2012
+1.325,,1.091,0.04,-0.04,Crouzet et al. 2012,0.10445,0.0019,-0.00193,Calculated,1.0063,0.0206,-0.0206,Calculated,,,,0.99,0.009,-0.009,Crouzet et al. 2012
+1.365,,1.117,0.035,-0.035,Crouzet et al. 2012,0.10569,0.00164,-0.00167,Calculated,1.0182,0.0184,-0.0184,Calculated,,,,0.99,0.009,-0.009,Crouzet et al. 2012
+1.405,,1.119,0.042,-0.042,Crouzet et al. 2012,0.10578,0.00197,-0.002,Calculated,1.0191,0.0213,-0.0213,Calculated,,,,0.99,0.009,-0.009,Crouzet et al. 2012
+1.445,,1.052,0.039,-0.039,Crouzet et al. 2012,0.10257,0.00188,-0.00192,Calculated,0.9881,0.0204,-0.0204,Calculated,,,,0.99,0.009,-0.009,Crouzet et al. 2012
+1.485,,1.036,0.04,-0.04,Crouzet et al. 2012,0.10178,0.00195,-0.00198,Calculated,0.9806,0.0209,-0.0209,Calculated,,,,0.99,0.009,-0.009,Crouzet et al. 2012
+1.525,,1.051,0.039,-0.039,Crouzet et al. 2012,0.10252,0.00188,-0.00192,Calculated,0.9876,0.0204,-0.0204,Calculated,,,,0.99,0.009,-0.009,Crouzet et al. 2012
+1.565,,1.08,0.037,-0.037,Crouzet et al. 2012,0.10392,0.00177,-0.0018,Calculated,1.0012,0.0194,-0.0194,Calculated,,,,0.99,0.009,-0.009,Crouzet et al. 2012
+1.605,,1.057,0.04,-0.04,Crouzet et al. 2012,0.10281,0.00193,-0.00196,Calculated,0.9905,0.0208,-0.0208,Calculated,,,,0.99,0.009,-0.009,Crouzet et al. 2012
+1.645,,1.107,0.039,-0.039,Crouzet et al. 2012,0.10521,0.00184,-0.00187,Calculated,1.0136,0.0201,-0.0201,Calculated,,,,0.99,0.009,-0.009,Crouzet et al. 2012
+1.685,,1.007,0.038,-0.038,Crouzet et al. 2012,0.10035,0.00188,-0.00191,Calculated,0.9668,0.0202,-0.0202,Calculated,,,,0.99,0.009,-0.009,Crouzet et al. 2012
+1.725,,1.041,0.039,-0.039,Crouzet et al. 2012,0.10203,0.00189,-0.00193,Calculated,0.9829,0.0205,-0.0205,Calculated,,,,0.99,0.009,-0.009,Crouzet et al. 2012
+1.765,,1.065,0.039,-0.039,Crouzet et al. 2012,0.1032,0.00187,-0.00191,Calculated,0.9942,0.0203,-0.0203,Calculated,,,,0.99,0.009,-0.009,Crouzet et al. 2012

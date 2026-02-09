@@ -1,4 +1,5 @@
 # assignment2 task h
+
 import numpy as np
 import yaml
 
