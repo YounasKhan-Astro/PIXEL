@@ -170,3 +170,4 @@ cython_debug/
 # TauREx data
 cia-*/
 xsecs-*/
+Computational-_astro/
