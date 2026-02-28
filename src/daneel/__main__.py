@@ -49,9 +49,9 @@ def main():
 
     args = parser.parse_args()
     #assignemnt 2 Task I
-    import yaml
-    with open(args.input_file, "r") as f:
-        params = yaml.safe_load(f)
+    parameters = Parameters(args.input_file)
+    params = parameters.params
+
     # Start log
     start = datetime.datetime.now()
     print(f"Daneel starts at {start}")

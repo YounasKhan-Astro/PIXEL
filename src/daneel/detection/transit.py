@@ -40,7 +40,7 @@ class TransitModel:
 
         # Time array around mid-transit (in days)
         # Here we look at +/- 0.75 days around t0 with 2000 points
-        self.t = np.linspace(-0.75, 0.75, 2000)
+        self.t = np.linspace(-0.3, 0.3, 2000)
 
         # Initialize batman model
         self.model = batman.TransitModel(self.params, self.t)
@@ -155,13 +155,7 @@ def transit(params_yaml=None, out_png=None):
         output_file = out_png or "lc.png"
         transit_from_yaml(params_yaml, output_file=output_file)
 def two_planet_transits_taskB():
-    """
-    Assignment 2 – Task B:
-    Plot two transiting planets around the same star.
-    Planet 1: original Kepler-297 c
-    Planet 2: same orbit but radius reduced by a factor 1/2.
-    The figure is saved as 'assignment2_taskB.png'.
-    """
+
     # Base planet = your Kepler-297 c from Task A
     params1 = kepler_297c_params()
 
