@@ -171,3 +171,5 @@ cython_debug/
 cia-*/
 xsecs-*/
 Computational-_astro/
+xsecs/*.h5
+*.h5
